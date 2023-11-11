@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
+import TaskForm from './components/TaskForm'
+import TaskListItem from './components/TaskListItem'
 
 function App() {
   return (
     <div className="App">
       <Header />
-    
+      <div className="container">
+        <TaskForm />
+        <TaskListItem />
+      </div>
     </div>
   )
 }
